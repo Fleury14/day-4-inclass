@@ -1,0 +1,79 @@
+/*Body container spacing*/
+
+.body-cont {
+  margin: 20px;
+}
+
+/*Setting heights with height-small, etc*/
+
+.height-x-small {
+  height: 20px;
+  background-color: #000;
+}
+
+.height-small {
+  height: 60px;
+  background-color: #000;
+}
+
+.height-medium {
+  height: 180px;
+  background-color: #000
+}
+
+.height-large {
+  height: 540px;
+  background-color: #000;
+}
+
+/*Spacing out nav bars*/
+
+.nav-spacing {
+  margin: 20px 20px 0px 20px;
+}
+
+.top-space {
+  margin-top: 20px;
+}
+
+/*Sizing and spacing main body*/
+
+.body-box {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/*Spacing two aside rows*/
+
+.aside-row {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.aside-spacing {
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+
+  /*Media Query to remove margin spacing on xs to maintain lineup*/
+
+@media only screen and (max-width: 768px) {
+
+  .aside-spacing {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .nav-spacing {
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+
+/*cheating a bit by altering the medium class since it's only used on asides. in a different situation i would give the asides another helper class*/
+
+  .height-medium {
+    margin-top: 20px;
+  }
+
+}
